@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    padding: 0; 
+    margin: 0; 
+    list-style-type: none;
+    text-decoration: none;
+}
+body {
+    background-image: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: white;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto; 
+}
+.logo {
+    font-size: 2rem;
+    color: black;
+    font-weight: 700;
+}
+.nav__item {
+    position: relative;
+}
+.nav__item:hover .dropdown {
+    display: block;
+    margin-top: 0; 
+}
+.nav__list {
+    display: flex;
+    gap: 25px;
+    font-size: 1.2rem;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+.nav__link {
+    color : black; 
+    font-weight: 400;
+}
+.nav__link:hover {
+    color: rgb(58, 123, 213);
+}
+.active__page {
+    font-weight: 500;
+}
+.cta__btn {
+ padding-left: 20px; 
+ border-radius: 5px;
+ padding-right: 20px;
+ padding-bottom: 7px;
+ padding-top: 7px;
+ background-color: rgb(58, 123, 213);
+ color: #fff;
+}
+.dropdown {
+    display: none;
+    width: 400px;
+    position: absolute;
+    top: 100%; 
+    left: 0; 
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: rgba(153, 153, 153, 0.54) 22px 21px 63px 0px; 
+}
+/* top bottom left right */
+.dropdown__option {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid rgb(219, 216, 216);
+    font-size: 1.1rem;
+}
+.dropdown__option:hover {
+    background-color: rgb(238, 234, 234);
+    cursor: pointer;
+}
